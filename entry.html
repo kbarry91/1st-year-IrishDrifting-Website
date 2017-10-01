@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- Group Website Design Assignment -->
+<!-- Authors :Kevin Barry, Conor Raftery , Edward Eldridge -->
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Irish Drifting</title>
+		<link href="styles.css"
+			type="text/css"
+			rel="stylesheet">
+	</head>
+	
+	<body>
+	<div id="container">
+		<nav class = "navi">
+		<img id="banner" src="images/jamesDeaneBanner3.jpg" title="banner" alt="banner">
+			<ul>  
+				<li><a href="index.html">&nbsp;&nbsp;Home&nbsp;&nbsp;</a></li>	
+				<li><a href="menu.html">&nbsp;&nbsp;Menu&nbsp;&nbsp;</a></li>
+				<li><a href="setMeals.html">&nbsp;&nbsp;Set Meals&nbsp;&nbsp;</a></li>
+				<li><a href="history.html">&nbsp;&nbsp;History&nbsp;&nbsp;</a></li>
+				<li><a href="gallery.html">&nbsp;&nbsp;Gallery&nbsp;&nbsp;</a></li>
+				<li><a href="booking.html">&nbsp;&nbsp;Booking&nbsp;&nbsp;</a></li>
+				<li><a href="login.html">&nbsp;&nbsp;Log In&nbsp;&nbsp;</a></li>
+				<li><a href="contactus.html">&nbsp;&nbsp;Contact Us&nbsp;&nbsp;</a></li>
+				
+			</ul>
+		</nav>
+		
+		<header>
+		<h1>Drift Entry</h1>
+		</header>
+		<div id ="formcenter">
+			
+			<p class="entry">To Apply for a 2016 Drift licence please fill in all the required details.</p>
+			<p class="entry">1 year licence is a fixed price of €100.</p>
+			
+			<fieldset>
+				<legend class ="entry"><strong>Entry Form</strong></legend>		
+				<form>
+					Driver Name:&nbsp;&nbsp;<input type="text" name="driverName" size="15" maxlength="20" />
+					<br/>
+					Address 1:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="address1" size="15" maxlength="30" /> 
+					<br/>
+					Address 2:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="address2" size="15" maxlength="30" /> 
+					<br/>
+					County: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="county" size="15" maxlength="30" /> 
+					<br/>
+					<strong>Credit Card Type:</strong><br/>
+						<input type="radio" name="cardtype" value="visa"/><img src="images/visa_thumbnail.jpg" title="visa" alt="visa"><br>
+						<input type="radio" name="cardtype" value="paypal"/><img src="images/paypal_thumbnail.jpg" title="paypal" alt="paypal"><br>
+						<input type="radio" name="cardtype" value="mastercard"/><img src="images/mastercard_thumbnail.jpg" title="mastercard" alt="mastercard"><br>
+						<input type="radio" name="cardtype" value="american express"/><img src="images/american_express_thumbnail.jpg" title="american express" alt="american express"><br>
+					<br>
+					Credit Card Number:
+					<input type="password" name="cardnumber " size="16" maxlength="16">
+					Expiration Date:
+					<select class="formloc"> 
+						<option value="" selected disabled >Month</option>
+						<option value="January" >January</option>
+						<option value="Febuary">Febuary</option>
+						<option value="March">March</option>
+						<option value="April">April</option>
+						<option value="May">May</option>
+						<option value="June">June</option>
+						<option value="July">July</option>
+						<option value="August">August</option>
+						<option value="September">September</option>
+						<option value="October">October</option>
+						<option value="November">November</option>
+						<option value="December">December</option>
+					</select>
+
+					<select class="formloc"> 
+						<option value="" selected disabled>Year</option>
+						<option value="2015">2015</option>
+						<option value="2016">2016</option>
+						<option value="2017">2017</option>
+						<option value="2018">2018</option>
+						<option value="2019">2019</option>
+						<option value="2020">2020</option>
+
+					</select>
+					<br><br>
+					E-mail :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="email" size="15" maxlength="30" />
+					<br>
+					Car Make :&nbsp;&nbsp;&nbsp;
+					<select class="formloc"> 
+						<option value="" selected disabled>Car Make</option>
+						<option value="BMW">BMW</option>
+						<option value="Ford">Ford</option>
+						<option value="Honda">Honda</option>
+						<option value="Mercedes-Benz">Mercedes-Benz</option>
+						<option value="Mitsubishi">Mitsubishi</option>
+						<option value="Mazda">Mazda</option>
+						<option value="Nissan">Nissan</option>
+						<option value="Opel">Opel</option>
+						<option value="Toyota">Toyota</option>
+						<option value="Volkswagen">Volkswagen</option>
+						<option value="Volvo">Volvo</option>
+						<option value="Other">Other</option>
+					</select>
+					<br>
+					Car Model : <input type ="text" name ="model" size = "15" maxlength ="20" />
+					<br>
+					<strong>modifications :</strong>
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="modifications" value="RollCage">Roll Cage<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="modifications" value="Turbo">Turbo<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="modifications" value="Supercharger">Supercharger<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="modifications" value="2-Way">2-Way<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="modifications" value="Lowered">Lowered<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="modifications" value="Kill-switch">Kill-switch<br>
+					
+					Sponsors:
+					<br>
+						<textarea name="additional notes" class="formloc" cols="20" rows="5">
+							Enter your additional notes regarding sponsors here...
+						</textarea>
+					<br>	
+					<input type="submit" value="Submit Payment">
+				</form>
+			</fieldset><!--end of fieldset-->
+		</div>
+		<footer>
+				<a href="#"><img class ="button" src="images/backButton.gif" title="Back To Top" alt="Back To Top"></a>&copy; 2015 Irish Drifting
+		</footer>
+	</div><!-- end div container -->
+	</body>
+</html> 
